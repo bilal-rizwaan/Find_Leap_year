@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body{
+        font-size: 5rem;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background: #000;
+        color: #fff;
+        font-family: monospace;
+        box-sizing: border-box;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+     document.title = "Find Leap Year";
+      let year = prompt("Enter the Year");
+      if (year % 4 === 0) {
+        if (year % 100 === 0) {
+          if (year % 400 === 0) {
+          } else {
+            document.write(`${year} is the leap year`);
+          }
+        } else {
+          document.write(`${year} is the leap year`);
+        }
+      } else {
+        document.write(`${year} is not the leap year`);
+      }
+    </script>
+  </body>
+</html>
